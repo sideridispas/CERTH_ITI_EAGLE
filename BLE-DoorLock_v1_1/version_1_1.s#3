@@ -9140,9 +9140,9 @@ Project: Smart Hotel</text>
 <instance part="R5" gate="G$1" x="172.72" y="114.3" rot="R90"/>
 <instance part="GND3" gate="1" x="172.72" y="78.74"/>
 <instance part="+3V3" gate="G$1" x="172.72" y="124.46"/>
-<instance part="Q4" gate="G$1" x="187.96" y="144.78"/>
-<instance part="R6" gate="G$1" x="177.8" y="142.24"/>
-<instance part="GND4" gate="1" x="190.5" y="134.62"/>
+<instance part="Q4" gate="G$1" x="203.2" y="149.86"/>
+<instance part="R6" gate="G$1" x="193.04" y="147.32"/>
+<instance part="GND4" gate="1" x="205.74" y="139.7"/>
 <instance part="C1" gate="G$1" x="63.5" y="149.86"/>
 <instance part="C2" gate="G$1" x="129.54" y="149.86"/>
 <instance part="UART" gate="A" x="215.9" y="45.72" rot="MR0"/>
@@ -9173,9 +9173,9 @@ Project: Smart Hotel</text>
 </segment>
 <segment>
 <pinref part="Q4" gate="G$1" pin="D"/>
-<wire x1="200.66" y1="152.4" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="152.4" x2="190.5" y2="149.86" width="0.1524" layer="91"/>
-<label x="200.66" y="152.4" size="1.778" layer="95" xref="yes"/>
+<wire x1="215.9" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="157.48" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
+<label x="215.9" y="157.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -9254,7 +9254,7 @@ Project: Smart Hotel</text>
 <segment>
 <pinref part="Q4" gate="G$1" pin="S"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="190.5" y1="139.7" x2="190.5" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="144.78" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="UART" gate="A" pin="1"/>
@@ -9454,8 +9454,8 @@ Project: Smart Hotel</text>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="142.24" x2="167.64" y2="142.24" width="0.1524" layer="91"/>
-<label x="167.64" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="187.96" y1="147.32" x2="182.88" y2="147.32" width="0.1524" layer="91"/>
+<label x="182.88" y="147.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AC_L" class="0">
@@ -9500,7 +9500,7 @@ Project: Smart Hotel</text>
 <segment>
 <pinref part="Q4" gate="G$1" pin="G"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="147.32" x2="198.12" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">

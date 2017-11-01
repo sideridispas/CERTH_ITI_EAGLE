@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1757,9 +1757,9 @@ design rules under a new name.</description>
 </element>
 <element name="C1" library="rcl" package="C0805" value="10uF" x="31.75" y="43.18" rot="R90"/>
 <element name="C2" library="rcl" package="C0805" value="10uF" x="31.75" y="48.26" rot="R90"/>
-<element name="C3" library="rcl" package="C0805" value="1uF" x="19.05" y="48.26" rot="R90"/>
+<element name="C3" library="rcl" package="C0805" value="1uF" x="17.78" y="46.99"/>
 <element name="ESP32" library="Adafruit HUZZAH32 ESP32 Feather" package="WROOM32_SKINNY" value="ESP32_WROOM32_SKINNY" x="25.4" y="77.47"/>
-<element name="GREEN_LED" library="adafruit" package="LED5MM" value="" x="7.62" y="53.34" rot="R270"/>
+<element name="GREEN_LED" library="adafruit" package="LED5MM" value="" x="6.35" y="53.34" rot="R270"/>
 <element name="NCP1117" library="NCP1117DT33G" package="TO229P990X238-4N" value="NCP1117DT33G" x="41.91" y="45.72">
 <attribute name="MANUFACTURER_PART_NUMBER" value="NCP1117DT33G" x="41.91" y="45.72" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="2.38mm" x="41.91" y="45.72" size="1.778" layer="27" display="off"/>
@@ -1777,16 +1777,16 @@ design rules under a new name.</description>
 <element name="GND" library="adafruit" package="1X01" value="" x="45.72" y="8.89"/>
 <element name="GPIO0" library="adafruit" package="1X01" value="" x="9.81" y="72.58"/>
 <element name="RESET" library="adafruit" package="1X01" value="" x="9.81" y="77.66"/>
-<element name="Q2" library="Adafruit HUZZAH32 ESP32 Feather" package="SOT23" value="MMBT2222" x="31.75" y="60.96" rot="R90"/>
-<element name="Q3" library="Adafruit HUZZAH32 ESP32 Feather" package="SOT23" value="MMBT2222" x="38.1" y="60.96" rot="R90"/>
-<element name="Q4" library="adafruit" package="SOT23" value="DMN6140L" x="25.4" y="45.72" rot="R180"/>
-<element name="R1" library="rcl" package="R0805" value="10k" x="31.75" y="54.61" rot="R90"/>
-<element name="R2" library="rcl" package="R0805" value="10k" x="39.37" y="54.61" rot="R90"/>
+<element name="Q2" library="Adafruit HUZZAH32 ESP32 Feather" package="SOT23" value="MMBT2222" x="31.75" y="58.42" rot="R90"/>
+<element name="Q3" library="Adafruit HUZZAH32 ESP32 Feather" package="SOT23" value="MMBT2222" x="31.75" y="53.34" rot="R90"/>
+<element name="Q4" library="adafruit" package="SOT23" value="DMN6140L" x="25.4" y="43.18" rot="R180"/>
+<element name="R1" library="rcl" package="R0805" value="10k" x="35.56" y="55.88" rot="R90"/>
+<element name="R2" library="rcl" package="R0805" value="10k" x="40.64" y="55.88" rot="R270"/>
 <element name="R3" library="rcl" package="R0805" value="1k" x="15.24" y="59.69" rot="R270"/>
 <element name="R4" library="rcl" package="R0805" value="1k" x="7.62" y="59.69" rot="R270"/>
-<element name="R5" library="rcl" package="R0805" value="10k" x="19.05" y="43.18" rot="R270"/>
-<element name="R6" library="rcl" package="R0805" value="1k" x="26.67" y="52.07" rot="R270"/>
-<element name="RED_LED" library="adafruit" package="LED5MM" value="" x="15.24" y="53.34" rot="R270"/>
+<element name="R5" library="rcl" package="R0805" value="10k" x="17.78" y="43.18"/>
+<element name="R6" library="rcl" package="R0805" value="1k" x="25.4" y="48.26"/>
+<element name="RED_LED" library="adafruit" package="LED5MM" value="" x="13.97" y="53.34" rot="R270"/>
 <element name="RESET_SWITCH" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="MOMENTARY-SWITCH" x="8.89" y="45.72" rot="R180">
 <attribute name="PROD_ID" value="SWCH-11966" x="8.89" y="45.72" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SF_SKU" value="COM-12992" x="8.89" y="45.72" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1804,38 +1804,43 @@ design rules under a new name.</description>
 <element name="U$4" library="Adafruit HUZZAH32 ESP32 Feather" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="4" y="4">
 <attribute name="BOM" value="EXCLUDE" x="4" y="4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DOOR-STRIKE" library="1729128" package="HDRV2W110P0X508_1X2_1016X810X1" value="1729128" x="29.21" y="7.62">
-<attribute name="HEIGHT" value="10mm" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="2way low profile vertical mount terminal Phoenix Contact Non-Fused Terminal Block, 2 Way, Solder Terminals, 30 ??? 14 AWG Through Hole, Nylon, 630 V" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="SUPPLIER_NAME" value="RS" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="3D_PACKAGE" value="" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="OTHER_PART_NUMBER" value="" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="RS_PART_NUMBER" value="1930586" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="1729128" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="ALLIED_NUMBER" value="70054405" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Phoenix Contact" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
+<element name="DOOR-STRIKE" library="1729128" package="HDRV2W110P0X508_1X2_1016X810X1" value="1729128" x="34.29" y="7.62" rot="R180">
+<attribute name="HEIGHT" value="10mm" x="34.29" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="2way low profile vertical mount terminal Phoenix Contact Non-Fused Terminal Block, 2 Way, Solder Terminals, 30 ??? 14 AWG Through Hole, Nylon, 630 V" x="34.29" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="34.29" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="3D_PACKAGE" value="" x="34.29" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="34.29" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="1930586" x="34.29" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="1729128" x="34.29" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="70054405" x="34.29" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Phoenix Contact" x="34.29" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 </elements>
 <signals>
 <signal name="LOCK_N">
 <contactref element="Q4" pad="3"/>
 <contactref element="DOOR-STRIKE" pad="2"/>
-<wire x1="34.29" y1="7.62" x2="25.4" y2="44.62" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="42.08" x2="25.4" y2="39.37" width="1.016" layer="1"/>
+<wire x1="25.4" y1="39.37" x2="29.21" y2="35.56" width="1.016" layer="1"/>
+<wire x1="29.21" y1="35.56" x2="29.21" y2="7.62" width="1.016" layer="1"/>
 </signal>
 <signal name="+12V">
 <contactref element="IRM-10-12" pad="V+"/>
 <contactref element="NCP1117" pad="3"/>
 <contactref element="C1" pad="1"/>
 <contactref element="12V" pad="1"/>
-<wire x1="37.76" y1="43.43" x2="37.76" y2="40.98" width="1.016" layer="1"/>
+<wire x1="37.76" y1="43.43" x2="37.76" y2="41.91" width="1.016" layer="1"/>
+<wire x1="37.76" y1="41.91" x2="37.76" y2="40.98" width="1.016" layer="1"/>
 <wire x1="37.76" y1="40.98" x2="44.65" y2="34.09" width="1.016" layer="1"/>
 <wire x1="44.65" y1="25.42" x2="44.65" y2="34.09" width="1.016" layer="1"/>
 <wire x1="44.65" y1="25.42" x2="44.65" y2="24.33" width="1.016" layer="1"/>
 <wire x1="44.65" y1="24.33" x2="41.91" y2="21.59" width="1.016" layer="1"/>
 <wire x1="41.91" y1="21.59" x2="41.91" y2="8.89" width="1.016" layer="1"/>
 <contactref element="DOOR-STRIKE" pad="1"/>
-<wire x1="37.76" y1="43.43" x2="31.75" y2="42.23" width="0" layer="19" extent="1-1"/>
-<wire x1="29.21" y1="7.62" x2="41.91" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="8.89" x2="35.56" y2="8.89" width="1.016" layer="1"/>
+<wire x1="35.56" y1="8.89" x2="34.29" y2="7.62" width="1.016" layer="1"/>
+<wire x1="31.75" y1="42.23" x2="37.44" y2="42.23" width="0.8128" layer="1"/>
+<wire x1="37.44" y1="42.23" x2="37.76" y2="41.91" width="0.8128" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="IRM-10-12" pad="V-"/>
@@ -1853,20 +1858,17 @@ design rules under a new name.</description>
 <contactref element="Q4" pad="2"/>
 <contactref element="UART" pad="1"/>
 <contactref element="GND" pad="1"/>
-<wire x1="25.74" y1="74.77" x2="33.9" y2="82.47" width="0" layer="19" extent="1-1"/>
-<wire x1="16.9" y1="82.47" x2="25.74" y2="74.77" width="0" layer="19" extent="1-1"/>
-<wire x1="19.7" y1="64.57" x2="25.74" y2="74.77" width="0" layer="19" extent="1-1"/>
-<wire x1="24.45" y1="46.82" x2="19.7" y2="64.57" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="49.21" x2="24.45" y2="46.82" width="0" layer="19" extent="1-1"/>
-<wire x1="15.24" y1="52.07" x2="19.05" y2="49.21" width="0" layer="19" extent="1-1"/>
-<wire x1="4.915" y1="47.97" x2="15.24" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="52.07" x2="4.915" y2="47.97" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="49.21" x2="19.05" y2="49.21" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="44.13" x2="31.75" y2="49.21" width="0" layer="19" extent="1-1"/>
-<wire x1="37.76" y1="48.01" x2="31.75" y2="49.21" width="0" layer="19" extent="1-1"/>
-<wire x1="46.99" y1="53.34" x2="37.76" y2="48.01" width="0" layer="19" extent="1-1"/>
-<wire x1="44.65" y1="17.42" x2="31.75" y2="44.13" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="8.89" x2="44.65" y2="17.42" width="0" layer="19" extent="1-1"/>
+<polygon width="1.016" layer="1" isolate="0.254">
+<vertex x="1.27" y="83.82"/>
+<vertex x="49.53" y="83.82"/>
+<vertex x="49.53" y="1.27"/>
+<vertex x="25.4" y="1.27"/>
+<vertex x="25.4" y="35.56"/>
+<vertex x="1.27" y="35.56"/>
+</polygon>
+<wire x1="24.45" y1="44.28" x2="21.74" y2="46.99" width="0.4064" layer="1"/>
+<wire x1="21.74" y1="46.99" x2="18.73" y2="46.99" width="0.4064" layer="1"/>
+<wire x1="13.97" y1="52.07" x2="18.73" y2="46.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="ESP32" pad="2"/>
@@ -1874,41 +1876,91 @@ design rules under a new name.</description>
 <contactref element="NCP1117" pad="2"/>
 <contactref element="C2" pad="1"/>
 <contactref element="3V3" pad="1"/>
-<wire x1="9.81" y1="67.5" x2="16.9" y2="81.2" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="42.23" x2="9.81" y2="67.5" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="47.31" x2="19.05" y2="42.23" width="0" layer="19" extent="1-1"/>
-<wire x1="37.76" y1="45.72" x2="31.75" y2="47.31" width="0" layer="19" extent="1-1"/>
+<wire x1="37.76" y1="45.72" x2="35.56" y2="45.72" width="0.8128" layer="1"/>
+<wire x1="35.56" y1="45.72" x2="33.97" y2="47.31" width="0.8128" layer="1"/>
+<wire x1="31.75" y1="47.31" x2="33.97" y2="47.31" width="0.8128" layer="1"/>
+<wire x1="16.9" y1="81.2" x2="11.51" y2="81.2" width="0.8128" layer="1"/>
+<wire x1="11.51" y1="81.2" x2="11.43" y2="81.28" width="0.8128" layer="1"/>
+<via x="11.43" y="81.28" extent="1-16" drill="0.6"/>
+<wire x1="11.43" y1="81.28" x2="12.7" y2="80.01" width="0.8128" layer="16"/>
+<wire x1="12.7" y1="80.01" x2="12.7" y2="67.31" width="0.8128" layer="16"/>
+<wire x1="12.7" y1="67.31" x2="12.7" y2="66.04" width="0.8128" layer="16"/>
+<wire x1="12.7" y1="66.04" x2="17.78" y2="60.96" width="0.8128" layer="16"/>
+<wire x1="17.78" y1="60.96" x2="21.59" y2="60.96" width="0.8128" layer="16"/>
+<wire x1="21.59" y1="60.96" x2="24.13" y2="58.42" width="0.8128" layer="16"/>
+<wire x1="9.81" y1="67.5" x2="12.51" y2="67.5" width="0.8128" layer="16"/>
+<wire x1="12.51" y1="67.5" x2="12.7" y2="67.31" width="0.8128" layer="16"/>
+<wire x1="24.13" y1="53.34" x2="25.4" y2="53.34" width="0.8128" layer="1"/>
+<wire x1="29.21" y1="49.53" x2="29.21" y2="48.26" width="0.8128" layer="1"/>
+<wire x1="29.21" y1="48.26" x2="30.16" y2="47.31" width="0.8128" layer="1"/>
+<wire x1="30.16" y1="47.31" x2="31.75" y2="47.31" width="0.8128" layer="1"/>
+<wire x1="25.4" y1="53.34" x2="29.21" y2="49.53" width="0.8128" layer="1"/>
+<via x="24.13" y="53.34" extent="1-16" drill="0.6"/>
+<wire x1="24.13" y1="53.34" x2="24.13" y2="58.42" width="0.8128" layer="16"/>
+<wire x1="18.73" y1="43.18" x2="21.59" y2="43.18" width="0.4064" layer="1"/>
+<via x="21.59" y="43.18" extent="1-16" drill="0.6"/>
+<wire x1="21.59" y1="43.18" x2="19.05" y2="45.72" width="0.4064" layer="16"/>
+<wire x1="19.05" y1="45.72" x2="19.05" y2="50.8" width="0.4064" layer="16"/>
+<via x="19.05" y="50.8" extent="1-16" drill="0.6"/>
+<wire x1="19.05" y1="50.8" x2="21.59" y2="53.34" width="0.4064" layer="1"/>
+<wire x1="21.59" y1="53.34" x2="24.13" y2="53.34" width="0.4064" layer="1"/>
 </signal>
 <signal name="RTS">
 <contactref element="R1" pad="1"/>
 <contactref element="Q3" pad="2"/>
 <contactref element="UART" pad="2"/>
-<wire x1="39.2" y1="61.91" x2="46.99" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="53.66" x2="39.2" y2="61.91" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="55.88" x2="45.72" y2="55.88" width="0.4064" layer="1"/>
+<wire x1="45.72" y1="55.88" x2="41.91" y2="52.07" width="0.4064" layer="1"/>
+<wire x1="35.56" y1="54.93" x2="33.49" y2="54.93" width="0.4064" layer="1"/>
+<wire x1="33.49" y1="54.93" x2="32.85" y2="54.29" width="0.4064" layer="1"/>
+<wire x1="35.56" y1="54.93" x2="37.78" y2="54.93" width="0.4064" layer="1"/>
+<wire x1="37.78" y1="54.93" x2="38.1" y2="54.61" width="0.4064" layer="1"/>
+<via x="38.1" y="54.61" extent="1-16" drill="0.6"/>
+<wire x1="38.1" y1="54.61" x2="40.64" y2="52.07" width="0.4064" layer="16"/>
+<via x="40.64" y="52.07" extent="1-16" drill="0.6"/>
+<wire x1="40.64" y1="52.07" x2="41.91" y2="52.07" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="2"/>
 <contactref element="Q2" pad="1"/>
-<wire x1="31.75" y1="55.56" x2="32.85" y2="60.01" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="56.83" x2="33.49" y2="56.83" width="0.4064" layer="1"/>
+<wire x1="33.49" y1="56.83" x2="32.85" y2="57.47" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R2" pad="2"/>
 <contactref element="Q3" pad="1"/>
-<wire x1="39.37" y1="55.56" x2="39.2" y2="60.01" width="0" layer="19" extent="1-1"/>
+<wire x1="32.85" y1="52.39" x2="38.1" y2="52.39" width="0.4064" layer="1"/>
+<wire x1="38.1" y1="52.39" x2="40.64" y2="54.93" width="0.4064" layer="1"/>
 </signal>
 <signal name="DTR">
 <contactref element="R2" pad="1"/>
 <contactref element="Q2" pad="2"/>
 <contactref element="UART" pad="6"/>
-<wire x1="39.37" y1="53.66" x2="46.99" y2="66.04" width="0" layer="19" extent="1-1"/>
-<wire x1="32.85" y1="61.91" x2="39.37" y2="53.66" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="66.04" x2="44.45" y2="66.04" width="0.4064" layer="1"/>
+<wire x1="44.45" y1="66.04" x2="40.64" y2="62.23" width="0.4064" layer="1"/>
+<wire x1="40.64" y1="62.23" x2="40.64" y2="59.69" width="0.4064" layer="1"/>
+<wire x1="40.64" y1="59.69" x2="40.64" y2="56.83" width="0.4064" layer="1"/>
+<wire x1="40.64" y1="59.69" x2="33.17" y2="59.69" width="0.4064" layer="1"/>
+<wire x1="33.17" y1="59.69" x2="32.85" y2="59.37" width="0.4064" layer="1"/>
 </signal>
 <signal name="GPIO0">
 <contactref element="Q2" pad="3"/>
 <contactref element="ESP32" pad="25"/>
 <contactref element="GPIO0" pad="1"/>
-<wire x1="30.65" y1="60.96" x2="33.9" y2="65.96" width="0" layer="19" extent="1-1"/>
-<wire x1="9.81" y1="72.58" x2="30.65" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="30.65" y1="58.42" x2="30.65" y2="59.86" width="0.4064" layer="1"/>
+<wire x1="30.65" y1="59.86" x2="33.9" y2="63.11" width="0.4064" layer="1"/>
+<wire x1="33.9" y1="65.96" x2="33.9" y2="63.11" width="0.4064" layer="1"/>
+<wire x1="9.81" y1="72.58" x2="9.81" y2="72.04" width="0.4064" layer="1"/>
+<wire x1="9.81" y1="72.04" x2="6.35" y2="68.58" width="0.4064" layer="1"/>
+<wire x1="6.35" y1="68.58" x2="6.35" y2="64.77" width="0.4064" layer="1"/>
+<wire x1="6.35" y1="64.77" x2="7.62" y2="63.5" width="0.4064" layer="1"/>
+<via x="7.62" y="63.5" extent="1-16" drill="0.6"/>
+<wire x1="7.62" y1="63.5" x2="11.43" y2="63.5" width="0.4064" layer="16"/>
+<via x="19.05" y="55.88" extent="1-16" drill="0.6"/>
+<wire x1="19.05" y1="55.88" x2="25.4" y2="55.88" width="0.4064" layer="1"/>
+<wire x1="25.4" y1="55.88" x2="27.94" y2="58.42" width="0.4064" layer="1"/>
+<wire x1="27.94" y1="58.42" x2="30.65" y2="58.42" width="0.4064" layer="1"/>
+<wire x1="11.43" y1="63.5" x2="19.05" y2="55.88" width="0.4064" layer="16"/>
 </signal>
 <signal name="RESET">
 <contactref element="Q3" pad="3"/>
@@ -1917,36 +1969,59 @@ design rules under a new name.</description>
 <contactref element="RESET_SWITCH" pad="B2"/>
 <contactref element="C3" pad="1"/>
 <contactref element="RESET" pad="1"/>
-<wire x1="19.05" y1="47.31" x2="37" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="44.13" x2="19.05" y2="47.31" width="0" layer="19" extent="1-1"/>
-<wire x1="4.915" y1="43.47" x2="19.05" y2="44.13" width="0" layer="19" extent="1-1"/>
-<wire x1="16.9" y1="79.93" x2="37" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="9.81" y1="77.66" x2="16.9" y2="79.93" width="0" layer="19" extent="1-1"/>
+<wire x1="9.81" y1="77.66" x2="11.62" y2="77.66" width="0.4064" layer="1"/>
+<wire x1="11.62" y1="77.66" x2="13.97" y2="80.01" width="0.4064" layer="1"/>
+<wire x1="13.97" y1="80.01" x2="16.82" y2="80.01" width="0.4064" layer="1"/>
+<wire x1="16.82" y1="80.01" x2="16.9" y2="79.93" width="0.4064" layer="1"/>
+<wire x1="9.81" y1="77.66" x2="9.08" y2="77.66" width="0.4064" layer="1"/>
+<wire x1="9.08" y1="77.66" x2="7.62" y2="76.2" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="76.2" x2="7.62" y2="72.39" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="72.39" x2="3.81" y2="68.58" width="0.4064" layer="1"/>
+<wire x1="3.81" y1="68.58" x2="3.81" y2="57.15" width="0.4064" layer="1"/>
+<wire x1="3.81" y1="57.15" x2="2.54" y2="55.88" width="0.4064" layer="1"/>
+<wire x1="2.54" y1="55.88" x2="2.54" y2="45.845" width="0.4064" layer="1"/>
+<wire x1="2.54" y1="45.845" x2="4.915" y2="43.47" width="0.4064" layer="1"/>
+<wire x1="4.915" y1="43.47" x2="7.91" y2="43.47" width="0.4064" layer="1"/>
+<wire x1="7.91" y1="43.47" x2="9.4378875" y2="44.9978875" width="0.4064" layer="1"/>
+<wire x1="16.83" y1="46.99" x2="16.83" y2="44.9978875" width="0.4064" layer="1"/>
+<wire x1="16.83" y1="44.9978875" x2="16.83" y2="43.18" width="0.4064" layer="1"/>
+<wire x1="16.83" y1="44.9978875" x2="9.4378875" y2="44.9978875" width="0.4064" layer="1"/>
+<wire x1="20.32" y1="54.61" x2="16.83" y2="51.12" width="0.4064" layer="1"/>
+<wire x1="16.83" y1="46.99" x2="16.83" y2="51.12" width="0.4064" layer="1"/>
+<wire x1="20.32" y1="54.61" x2="26.67" y2="54.61" width="0.4064" layer="1"/>
+<wire x1="26.67" y1="54.61" x2="27.94" y2="53.34" width="0.4064" layer="1"/>
+<wire x1="27.94" y1="53.34" x2="30.65" y2="53.34" width="0.4064" layer="1"/>
 </signal>
 <signal name="GPIO15">
 <contactref element="ESP32" pad="23"/>
-<contactref element="R3" pad="1"/>
-<wire x1="15.24" y1="60.64" x2="29.86" y2="64.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO14">
 <contactref element="ESP32" pad="13"/>
 <contactref element="R4" pad="1"/>
-<wire x1="7.62" y1="60.64" x2="16.9" y2="67.23" width="0" layer="19" extent="1-1"/>
+<wire x1="16.9" y1="67.23" x2="14.21" y2="67.23" width="0.4064" layer="1"/>
+<wire x1="14.21" y1="67.23" x2="7.62" y2="60.64" width="0.4064" layer="1"/>
 </signal>
 <signal name="RXD0">
 <contactref element="ESP32" pad="34"/>
 <contactref element="UART" pad="4"/>
-<wire x1="46.99" y1="60.96" x2="33.9" y2="77.39" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="60.96" x2="40.64" y2="67.31" width="0.4064" layer="16"/>
+<wire x1="40.64" y1="67.31" x2="40.64" y2="76.2" width="0.4064" layer="16"/>
+<wire x1="33.9" y1="77.39" x2="33.98" y2="77.47" width="0.4064" layer="1"/>
+<wire x1="33.98" y1="77.47" x2="39.37" y2="77.47" width="0.4064" layer="1"/>
+<via x="39.37" y="77.47" extent="1-16" drill="0.6"/>
+<wire x1="39.37" y1="77.47" x2="40.64" y2="76.2" width="0.4064" layer="16"/>
 </signal>
 <signal name="TXD0">
 <contactref element="ESP32" pad="35"/>
 <contactref element="UART" pad="5"/>
-<wire x1="46.99" y1="63.5" x2="33.9" y2="78.66" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="63.5" x2="41.91" y2="68.58" width="0.4064" layer="16"/>
+<wire x1="41.91" y1="68.58" x2="41.91" y2="78.74" width="0.4064" layer="16"/>
+<wire x1="33.9" y1="78.66" x2="33.98" y2="78.74" width="0.4064" layer="1"/>
+<wire x1="33.98" y1="78.74" x2="41.91" y2="78.74" width="0.4064" layer="1"/>
+<via x="41.91" y="78.74" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="GPIO27">
 <contactref element="ESP32" pad="12"/>
-<contactref element="R6" pad="1"/>
-<wire x1="16.9" y1="68.5" x2="26.67" y2="53.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AC_L">
 <contactref element="IRM-10-12" pad="AC/L"/>
@@ -1965,20 +2040,41 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="R3" pad="2"/>
 <contactref element="RED_LED" pad="A"/>
-<wire x1="15.24" y1="54.61" x2="15.24" y2="58.74" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="54.61" x2="15.24" y2="55.88" width="0.4064" layer="1"/>
+<wire x1="15.24" y1="55.88" x2="15.24" y2="58.74" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="R4" pad="2"/>
 <contactref element="GREEN_LED" pad="A"/>
-<wire x1="7.62" y1="54.61" x2="7.62" y2="58.74" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="54.61" x2="7.62" y2="55.88" width="0.4064" layer="1"/>
+<wire x1="7.62" y1="55.88" x2="7.62" y2="58.74" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="Q4" pad="1"/>
 <contactref element="R6" pad="2"/>
-<wire x1="26.35" y1="46.82" x2="26.67" y2="51.12" width="0" layer="19" extent="1-1"/>
+<wire x1="26.35" y1="48.26" x2="26.35" y2="44.28" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="UART" pad="3"/>
+</signal>
+<signal name="GPIO12">
+<contactref element="ESP32" pad="14"/>
+<contactref element="R3" pad="1"/>
+<wire x1="16.9" y1="65.96" x2="16.43" y2="65.96" width="0.4064" layer="1"/>
+<wire x1="16.43" y1="65.96" x2="15.24" y2="64.77" width="0.4064" layer="1"/>
+<wire x1="15.24" y1="64.77" x2="15.24" y2="60.64" width="0.4064" layer="1"/>
+</signal>
+<signal name="GPIO13">
+<contactref element="ESP32" pad="16"/>
+<contactref element="R6" pad="1"/>
+<wire x1="24.45" y1="48.26" x2="24.45" y2="49.21" width="0.4064" layer="1"/>
+<via x="21.59" y="50.8" extent="1-16" drill="0.6"/>
+<wire x1="21.59" y1="50.8" x2="21.59" y2="58.42" width="0.4064" layer="16"/>
+<wire x1="20.97" y1="64.57" x2="20.97" y2="59.04" width="0.4064" layer="1"/>
+<wire x1="20.97" y1="59.04" x2="21.59" y2="58.42" width="0.4064" layer="1"/>
+<via x="21.59" y="58.42" extent="1-16" drill="0.6"/>
+<wire x1="24.45" y1="49.21" x2="22.86" y2="50.8" width="0.4064" layer="1"/>
+<wire x1="22.86" y1="50.8" x2="21.59" y2="50.8" width="0.4064" layer="1"/>
 </signal>
 </signals>
 </board>
