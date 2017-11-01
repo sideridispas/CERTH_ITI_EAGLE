@@ -9054,8 +9054,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="IRM-10-12" library="meanwell_irm_v5" deviceset="IRM_05/10" device=""/>
 <part name="NCP1117" library="NCP1117DT33G" deviceset="NCP1117DT33G" device=""/>
 <part name="220VAC" library="1729128" deviceset="1729128" device=""/>
+<part name="Q1" library="Adafruit HUZZAH32 ESP32 Feather" deviceset="TRANSISTOR_NPN" device="SOT23" value="MMBT2222"/>
 <part name="Q2" library="Adafruit HUZZAH32 ESP32 Feather" deviceset="TRANSISTOR_NPN" device="SOT23" value="MMBT2222"/>
-<part name="Q3" library="Adafruit HUZZAH32 ESP32 Feather" deviceset="TRANSISTOR_NPN" device="SOT23" value="MMBT2222"/>
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -9071,7 +9071,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="Q4" library="adafruit" deviceset="MOSFET-N" device="REFLOW" value="DMN6140L"/>
+<part name="Q3" library="adafruit" deviceset="MOSFET-N" device="REFLOW" value="DMN6140L"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="C0805" value="10uF"/>
@@ -9123,8 +9123,8 @@ Project: Smart Hotel</text>
 <instance part="IRM-10-12" gate="G$1" x="33.02" y="149.86"/>
 <instance part="NCP1117" gate="G$1" x="119.38" y="157.48" rot="MR0"/>
 <instance part="220VAC" gate="G$1" x="180.34" y="55.88"/>
-<instance part="Q2" gate="G$1" x="119.38" y="35.56"/>
-<instance part="Q3" gate="G$1" x="119.38" y="17.78" rot="MR180"/>
+<instance part="Q1" gate="G$1" x="119.38" y="35.56"/>
+<instance part="Q2" gate="G$1" x="119.38" y="17.78" rot="MR180"/>
 <instance part="P+1" gate="1" x="53.34" y="165.1"/>
 <instance part="+3V1" gate="G$1" x="137.16" y="160.02"/>
 <instance part="GND1" gate="1" x="53.34" y="134.62"/>
@@ -9140,7 +9140,7 @@ Project: Smart Hotel</text>
 <instance part="R5" gate="G$1" x="172.72" y="114.3" rot="R90"/>
 <instance part="GND3" gate="1" x="172.72" y="78.74"/>
 <instance part="+3V3" gate="G$1" x="172.72" y="124.46"/>
-<instance part="Q4" gate="G$1" x="203.2" y="149.86"/>
+<instance part="Q3" gate="G$1" x="203.2" y="149.86"/>
 <instance part="R6" gate="G$1" x="193.04" y="147.32"/>
 <instance part="GND4" gate="1" x="205.74" y="139.7"/>
 <instance part="C1" gate="G$1" x="63.5" y="149.86"/>
@@ -9172,7 +9172,7 @@ Project: Smart Hotel</text>
 <wire x1="180.34" y1="33.02" x2="177.8" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Q4" gate="G$1" pin="D"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
 <wire x1="215.9" y1="157.48" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="157.48" x2="205.74" y2="154.94" width="0.1524" layer="91"/>
 <label x="215.9" y="157.48" size="1.778" layer="95" xref="yes"/>
@@ -9252,7 +9252,7 @@ Project: Smart Hotel</text>
 <junction x="172.72" y="83.82"/>
 </segment>
 <segment>
-<pinref part="Q4" gate="G$1" pin="S"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="205.74" y1="144.78" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
 </segment>
@@ -9300,7 +9300,7 @@ Project: Smart Hotel</text>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="35.56" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="E"/>
+<pinref part="Q2" gate="G$1" pin="E"/>
 <wire x1="99.06" y1="35.56" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="22.86" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="25.4" x2="119.38" y2="27.94" width="0.1524" layer="91"/>
@@ -9319,14 +9319,14 @@ Project: Smart Hotel</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="Q2" gate="G$1" pin="B"/>
+<pinref part="Q1" gate="G$1" pin="B"/>
 <wire x1="114.3" y1="35.56" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="Q3" gate="G$1" pin="B"/>
+<pinref part="Q2" gate="G$1" pin="B"/>
 <wire x1="114.3" y1="17.78" x2="116.84" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9334,7 +9334,7 @@ Project: Smart Hotel</text>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="17.78" x2="99.06" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="E"/>
+<pinref part="Q1" gate="G$1" pin="E"/>
 <wire x1="99.06" y1="17.78" x2="96.52" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="30.48" x2="121.92" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="27.94" x2="119.38" y2="25.4" width="0.1524" layer="91"/>
@@ -9352,7 +9352,7 @@ Project: Smart Hotel</text>
 </net>
 <net name="GPIO0" class="0">
 <segment>
-<pinref part="Q2" gate="G$1" pin="C"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
 <wire x1="121.92" y1="40.64" x2="121.92" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
 <label x="127" y="43.18" size="1.778" layer="95" xref="yes"/>
@@ -9370,7 +9370,7 @@ Project: Smart Hotel</text>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="C"/>
+<pinref part="Q2" gate="G$1" pin="C"/>
 <wire x1="121.92" y1="12.7" x2="121.92" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="91"/>
 <label x="127" y="10.16" size="1.778" layer="95" xref="yes"/>
@@ -9488,7 +9488,7 @@ Project: Smart Hotel</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="Q4" gate="G$1" pin="G"/>
+<pinref part="Q3" gate="G$1" pin="G"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="147.32" x2="198.12" y2="147.32" width="0.1524" layer="91"/>
 </segment>

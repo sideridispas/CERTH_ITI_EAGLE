@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1744,20 +1744,31 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="220VAC" library="1729128" package="HDRV2W110P0X508_1X2_1016X810X1" value="1729128" x="20.32" y="7.62" rot="R180">
-<attribute name="MANUFACTURER_PART_NUMBER" value="1729128" x="20.32" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="10mm" x="20.32" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="3D_PACKAGE" value="" x="20.32" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Phoenix Contact" x="20.32" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SUPPLIER_NAME" value="RS" x="20.32" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="RS_PART_NUMBER" value="1930586" x="20.32" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value="2way low profile vertical mount terminal Phoenix Contact Non-Fused Terminal Block, 2 Way, Solder Terminals, 30 ??? 14 AWG Through Hole, Nylon, 630 V" x="20.32" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ALLIED_NUMBER" value="70054405" x="20.32" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OTHER_PART_NUMBER" value="" x="20.32" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="220VAC" library="1729128" package="HDRV2W110P0X508_1X2_1016X810X1" value="1729128" x="15.24" y="7.62">
+<attribute name="MANUFACTURER_PART_NUMBER" value="1729128" x="15.24" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="10mm" x="15.24" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="3D_PACKAGE" value="" x="15.24" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Phoenix Contact" x="15.24" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="15.24" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="1930586" x="15.24" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="2way low profile vertical mount terminal Phoenix Contact Non-Fused Terminal Block, 2 Way, Solder Terminals, 30 ??? 14 AWG Through Hole, Nylon, 630 V" x="15.24" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="70054405" x="15.24" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="15.24" y="7.62" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C1" library="rcl" package="C0805" value="10uF" x="31.75" y="43.18" rot="R90"/>
 <element name="C2" library="rcl" package="C0805" value="10uF" x="31.75" y="48.26" rot="R90"/>
-<element name="C3" library="rcl" package="C0805" value="1uF" x="19.05" y="48.26" rot="R90"/>
+<element name="C3" library="rcl" package="C0805" value="1uF" x="22.86" y="48.26" rot="R90"/>
+<element name="DOOR-STRIKE" library="1729128" package="HDRV2W110P0X508_1X2_1016X810X1" value="1729128" x="30.48" y="7.62">
+<attribute name="MANUFACTURER_PART_NUMBER" value="1729128" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="10mm" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="3D_PACKAGE" value="" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Phoenix Contact" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="1930586" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="2way low profile vertical mount terminal Phoenix Contact Non-Fused Terminal Block, 2 Way, Solder Terminals, 30 ??? 14 AWG Through Hole, Nylon, 630 V" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="70054405" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="30.48" y="7.62" size="1.778" layer="27" display="off"/>
+</element>
 <element name="ESP32" library="Adafruit HUZZAH32 ESP32 Feather" package="WROOM32_SKINNY" value="ESP32_WROOM32_SKINNY" x="25.4" y="77.47"/>
 <element name="GREEN_LED" library="adafruit" package="LED5MM" value="" x="7.62" y="53.34" rot="R270"/>
 <element name="NCP1117" library="NCP1117DT33G" package="TO229P990X238-4N" value="NCP1117DT33G" x="41.91" y="45.72">
@@ -1779,17 +1790,17 @@ design rules under a new name.</description>
 <element name="RESET" library="adafruit" package="1X01" value="" x="9.81" y="77.66"/>
 <element name="Q2" library="Adafruit HUZZAH32 ESP32 Feather" package="SOT23" value="MMBT2222" x="31.75" y="60.96" rot="R90"/>
 <element name="Q3" library="Adafruit HUZZAH32 ESP32 Feather" package="SOT23" value="MMBT2222" x="38.1" y="60.96" rot="R90"/>
-<element name="Q4" library="adafruit" package="SOT23" value="DMN6140L" x="25.4" y="45.72" rot="R180"/>
+<element name="Q4" library="adafruit" package="SOT23" value="DMN6140L" x="24.13" y="54.61" rot="R180"/>
 <element name="R1" library="rcl" package="R0805" value="10k" x="31.75" y="54.61" rot="R90"/>
 <element name="R2" library="rcl" package="R0805" value="10k" x="39.37" y="54.61" rot="R90"/>
 <element name="R3" library="rcl" package="R0805" value="1k" x="15.24" y="59.69" rot="R270"/>
 <element name="R4" library="rcl" package="R0805" value="1k" x="7.62" y="59.69" rot="R270"/>
-<element name="R5" library="rcl" package="R0805" value="10k" x="19.05" y="43.18" rot="R270"/>
-<element name="R6" library="rcl" package="R0805" value="1k" x="26.67" y="52.07" rot="R270"/>
+<element name="R5" library="rcl" package="R0805" value="10k" x="22.86" y="43.18" rot="R270"/>
+<element name="R6" library="rcl" package="R0805" value="1k" x="25.4" y="59.69" rot="R270"/>
 <element name="RED_LED" library="adafruit" package="LED5MM" value="" x="15.24" y="53.34" rot="R270"/>
-<element name="RESET_SWITCH" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="MOMENTARY-SWITCH" x="8.89" y="45.72" rot="R180">
-<attribute name="PROD_ID" value="SWCH-11966" x="8.89" y="45.72" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SF_SKU" value="COM-12992" x="8.89" y="45.72" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="RESET_SWITCH" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="MOMENTARY-SWITCH" x="13.97" y="45.72" rot="R180">
+<attribute name="PROD_ID" value="SWCH-11966" x="13.97" y="45.72" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SF_SKU" value="COM-12992" x="13.97" y="45.72" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="IRM-10-12" library="meanwell_irm_v5" package="IRM_05/10" value="" x="25.4" y="26.67"/>
 <element name="U$1" library="Adafruit HUZZAH32 ESP32 Feather" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="46" y="74">
@@ -1804,36 +1815,24 @@ design rules under a new name.</description>
 <element name="U$4" library="Adafruit HUZZAH32 ESP32 Feather" package="MOUNTINGHOLE_2.5_PLATED" value="MOUNTINGHOLE2.5" x="4" y="4">
 <attribute name="BOM" value="EXCLUDE" x="4" y="4" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DOOR-STRIKE" library="1729128" package="HDRV2W110P0X508_1X2_1016X810X1" value="1729128" x="29.21" y="7.62">
-<attribute name="HEIGHT" value="10mm" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="2way low profile vertical mount terminal Phoenix Contact Non-Fused Terminal Block, 2 Way, Solder Terminals, 30 ??? 14 AWG Through Hole, Nylon, 630 V" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="SUPPLIER_NAME" value="RS" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="3D_PACKAGE" value="" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="OTHER_PART_NUMBER" value="" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="RS_PART_NUMBER" value="1930586" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="1729128" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="ALLIED_NUMBER" value="70054405" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Phoenix Contact" x="29.21" y="7.62" size="1.778" layer="27" display="off"/>
-</element>
 </elements>
 <signals>
+<signal name="LOCK_P">
+<contactref element="DOOR-STRIKE" pad="1"/>
+</signal>
 <signal name="LOCK_N">
-<contactref element="Q4" pad="3"/>
 <contactref element="DOOR-STRIKE" pad="2"/>
-<wire x1="34.29" y1="7.62" x2="25.4" y2="44.62" width="0" layer="19" extent="1-1"/>
+<contactref element="Q4" pad="3"/>
+<wire x1="35.56" y1="7.62" x2="24.13" y2="53.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
 <contactref element="IRM-10-12" pad="V+"/>
 <contactref element="NCP1117" pad="3"/>
 <contactref element="C1" pad="1"/>
 <contactref element="12V" pad="1"/>
-<wire x1="37.76" y1="43.43" x2="37.76" y2="40.98" width="1.016" layer="1"/>
-<wire x1="37.76" y1="40.98" x2="44.65" y2="34.09" width="1.016" layer="1"/>
-<wire x1="44.65" y1="25.42" x2="44.65" y2="34.09" width="1.016" layer="1"/>
-<wire x1="44.65" y1="25.42" x2="44.65" y2="24.33" width="1.016" layer="1"/>
-<wire x1="44.65" y1="24.33" x2="41.91" y2="21.59" width="1.016" layer="1"/>
-<wire x1="41.91" y1="21.59" x2="41.91" y2="8.89" width="1.016" layer="1"/>
-<wire x1="37.76" y1="43.43" x2="31.75" y2="42.23" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="42.23" x2="37.76" y2="43.43" width="0" layer="19" extent="1-1"/>
+<wire x1="44.65" y1="25.42" x2="37.76" y2="43.43" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="8.89" x2="44.65" y2="25.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="IRM-10-12" pad="V-"/>
@@ -1854,12 +1853,12 @@ design rules under a new name.</description>
 <wire x1="25.74" y1="74.77" x2="33.9" y2="82.47" width="0" layer="19" extent="1-1"/>
 <wire x1="16.9" y1="82.47" x2="25.74" y2="74.77" width="0" layer="19" extent="1-1"/>
 <wire x1="19.7" y1="64.57" x2="25.74" y2="74.77" width="0" layer="19" extent="1-1"/>
-<wire x1="24.45" y1="46.82" x2="19.7" y2="64.57" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="49.21" x2="24.45" y2="46.82" width="0" layer="19" extent="1-1"/>
-<wire x1="15.24" y1="52.07" x2="19.05" y2="49.21" width="0" layer="19" extent="1-1"/>
-<wire x1="4.915" y1="47.97" x2="15.24" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="52.07" x2="4.915" y2="47.97" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="49.21" x2="19.05" y2="49.21" width="0" layer="19" extent="1-1"/>
+<wire x1="23.18" y1="55.71" x2="19.7" y2="64.57" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="49.21" x2="23.18" y2="55.71" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="52.07" x2="22.86" y2="49.21" width="0" layer="19" extent="1-1"/>
+<wire x1="9.995" y1="47.97" x2="15.24" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="52.07" x2="9.995" y2="47.97" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="49.21" x2="22.86" y2="49.21" width="0" layer="19" extent="1-1"/>
 <wire x1="31.75" y1="44.13" x2="31.75" y2="49.21" width="0" layer="19" extent="1-1"/>
 <wire x1="37.76" y1="48.01" x2="31.75" y2="49.21" width="0" layer="19" extent="1-1"/>
 <wire x1="46.99" y1="53.34" x2="37.76" y2="48.01" width="0" layer="19" extent="1-1"/>
@@ -1873,8 +1872,8 @@ design rules under a new name.</description>
 <contactref element="C2" pad="1"/>
 <contactref element="3V3" pad="1"/>
 <wire x1="9.81" y1="67.5" x2="16.9" y2="81.2" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="42.23" x2="9.81" y2="67.5" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="47.31" x2="19.05" y2="42.23" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="42.23" x2="9.81" y2="67.5" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="47.31" x2="22.86" y2="42.23" width="0" layer="19" extent="1-1"/>
 <wire x1="37.76" y1="45.72" x2="31.75" y2="47.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTS">
@@ -1915,9 +1914,9 @@ design rules under a new name.</description>
 <contactref element="RESET_SWITCH" pad="B2"/>
 <contactref element="C3" pad="1"/>
 <contactref element="RESET" pad="1"/>
-<wire x1="19.05" y1="47.31" x2="37" y2="60.96" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="44.13" x2="19.05" y2="47.31" width="0" layer="19" extent="1-1"/>
-<wire x1="4.915" y1="43.47" x2="19.05" y2="44.13" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="47.31" x2="37" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="44.13" x2="22.86" y2="47.31" width="0" layer="19" extent="1-1"/>
+<wire x1="9.995" y1="43.47" x2="22.86" y2="44.13" width="0" layer="19" extent="1-1"/>
 <wire x1="16.9" y1="79.93" x2="37" y2="60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="9.81" y1="77.66" x2="16.9" y2="79.93" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1944,21 +1943,17 @@ design rules under a new name.</description>
 <signal name="GPIO27">
 <contactref element="ESP32" pad="12"/>
 <contactref element="R6" pad="1"/>
-<wire x1="16.9" y1="68.5" x2="26.67" y2="53.02" width="0" layer="19" extent="1-1"/>
+<wire x1="16.9" y1="68.5" x2="25.4" y2="60.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AC_L">
 <contactref element="IRM-10-12" pad="AC/L"/>
 <contactref element="220VAC" pad="2"/>
-<wire x1="15.24" y1="7.62" x2="15.24" y2="13.97" width="1.9304" layer="1"/>
-<wire x1="15.24" y1="13.97" x2="11.79" y2="17.42" width="1.9304" layer="1"/>
-<wire x1="6.15" y1="17.42" x2="11.79" y2="17.42" width="1.9304" layer="1"/>
+<wire x1="6.15" y1="17.42" x2="20.32" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AC_N">
 <contactref element="IRM-10-12" pad="AC/N"/>
 <contactref element="220VAC" pad="1"/>
-<wire x1="6.15" y1="28.17" x2="9.93" y2="28.17" width="1.9304" layer="1"/>
-<wire x1="9.93" y1="28.17" x2="20.32" y2="17.78" width="1.9304" layer="1"/>
-<wire x1="20.32" y1="17.78" x2="20.32" y2="7.62" width="1.9304" layer="1"/>
+<wire x1="15.24" y1="7.62" x2="6.15" y2="28.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R3" pad="2"/>
@@ -1973,13 +1968,10 @@ design rules under a new name.</description>
 <signal name="N$6">
 <contactref element="Q4" pad="1"/>
 <contactref element="R6" pad="2"/>
-<wire x1="26.35" y1="46.82" x2="26.67" y2="51.12" width="0" layer="19" extent="1-1"/>
+<wire x1="25.08" y1="55.71" x2="25.4" y2="58.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="UART" pad="3"/>
-</signal>
-<signal name="LOCK_P">
-<contactref element="DOOR-STRIKE" pad="1"/>
 </signal>
 </signals>
 </board>

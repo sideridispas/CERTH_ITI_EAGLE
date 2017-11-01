@@ -158,10 +158,10 @@
 <wire x1="50" y1="0" x2="50" y2="90" width="0" layer="20"/>
 <wire x1="50" y1="90" x2="0" y2="90" width="0" layer="20"/>
 <wire x1="0" y1="90" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="0" y1="0" x2="0" y2="90" x3="-23" y3="45" textsize="1.778" layer="1"/>
-<dimension x1="4" y1="74" x2="46" y2="74" x3="25" y3="106.73" textsize="1.778" layer="1"/>
-<dimension x1="0" y1="90" x2="50" y2="90" x3="25" y3="114" textsize="1.778" layer="1"/>
-<dimension x1="4" y1="4" x2="4" y2="74" x3="-13" y3="39" textsize="1.778" layer="1"/>
+<dimension x1="0" y1="0" x2="0" y2="90" x3="-23" y3="45" textsize="1.778" layer="51"/>
+<dimension x1="4" y1="74" x2="46" y2="74" x3="25" y3="106.73" textsize="1.778" layer="51"/>
+<dimension x1="0" y1="90" x2="50" y2="90" x3="25" y3="114" textsize="1.778" layer="51"/>
+<dimension x1="4" y1="4" x2="4" y2="74" x3="-13" y3="39" textsize="1.778" layer="51"/>
 </plain>
 <libraries>
 <library name="1729128">

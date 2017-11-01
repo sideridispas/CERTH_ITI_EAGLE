@@ -1833,7 +1833,9 @@ design rules under a new name.</description>
 <wire x1="44.65" y1="25.42" x2="44.65" y2="24.33" width="1.016" layer="1"/>
 <wire x1="44.65" y1="24.33" x2="41.91" y2="21.59" width="1.016" layer="1"/>
 <wire x1="41.91" y1="21.59" x2="41.91" y2="8.89" width="1.016" layer="1"/>
+<contactref element="DOOR-STRIKE" pad="1"/>
 <wire x1="37.76" y1="43.43" x2="31.75" y2="42.23" width="0" layer="19" extent="1-1"/>
+<wire x1="29.21" y1="7.62" x2="41.91" y2="8.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="IRM-10-12" pad="V-"/>
@@ -1977,9 +1979,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$5">
 <contactref element="UART" pad="3"/>
-</signal>
-<signal name="LOCK_P">
-<contactref element="DOOR-STRIKE" pad="1"/>
 </signal>
 </signals>
 </board>

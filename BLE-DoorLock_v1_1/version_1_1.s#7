@@ -9054,7 +9054,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="IRM-10-12" library="meanwell_irm_v5" deviceset="IRM_05/10" device=""/>
 <part name="NCP1117" library="NCP1117DT33G" deviceset="NCP1117DT33G" device=""/>
 <part name="220VAC" library="1729128" deviceset="1729128" device=""/>
-<part name="DOOR-STRIKE" library="1729128" deviceset="1729128" device=""/>
 <part name="Q2" library="Adafruit HUZZAH32 ESP32 Feather" deviceset="TRANSISTOR_NPN" device="SOT23" value="MMBT2222"/>
 <part name="Q3" library="Adafruit HUZZAH32 ESP32 Feather" deviceset="TRANSISTOR_NPN" device="SOT23" value="MMBT2222"/>
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
@@ -9075,7 +9074,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="Q4" library="adafruit" deviceset="MOSFET-N" device="REFLOW" value="DMN6140L"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="P+2" library="supply1" deviceset="+12V" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="C0805" value="10uF"/>
 <part name="C2" library="rcl" deviceset="C-US" device="C0805" value="10uF"/>
 <part name="UART" library="adafruit" deviceset="PINHD-1X6" device=""/>
@@ -9092,6 +9090,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="U$2" library="Adafruit HUZZAH32 ESP32 Feather" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$3" library="Adafruit HUZZAH32 ESP32 Feather" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="U$4" library="Adafruit HUZZAH32 ESP32 Feather" deviceset="MOUNTINGHOLE" device="2.5"/>
+<part name="DOOR-STRIKE" library="1729128" deviceset="1729128" device=""/>
+<part name="P+2" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9123,7 +9123,6 @@ Project: Smart Hotel</text>
 <instance part="IRM-10-12" gate="G$1" x="33.02" y="149.86"/>
 <instance part="NCP1117" gate="G$1" x="119.38" y="157.48" rot="MR0"/>
 <instance part="220VAC" gate="G$1" x="180.34" y="55.88"/>
-<instance part="DOOR-STRIKE" gate="G$1" x="180.34" y="35.56"/>
 <instance part="Q2" gate="G$1" x="119.38" y="35.56"/>
 <instance part="Q3" gate="G$1" x="119.38" y="17.78" rot="MR180"/>
 <instance part="P+1" gate="1" x="53.34" y="165.1"/>
@@ -9144,7 +9143,6 @@ Project: Smart Hotel</text>
 <instance part="Q4" gate="G$1" x="187.96" y="144.78"/>
 <instance part="R6" gate="G$1" x="177.8" y="142.24"/>
 <instance part="GND4" gate="1" x="190.5" y="134.62"/>
-<instance part="P+2" gate="1" x="190.5" y="165.1"/>
 <instance part="C1" gate="G$1" x="63.5" y="149.86"/>
 <instance part="C2" gate="G$1" x="129.54" y="149.86"/>
 <instance part="UART" gate="A" x="215.9" y="45.72" rot="MR0"/>
@@ -9161,28 +9159,30 @@ Project: Smart Hotel</text>
 <instance part="U$2" gate="G$1" x="17.78" y="10.16"/>
 <instance part="U$3" gate="G$1" x="25.4" y="10.16"/>
 <instance part="U$4" gate="G$1" x="33.02" y="10.16"/>
+<instance part="DOOR-STRIKE" gate="G$1" x="180.34" y="35.56"/>
+<instance part="P+2" gate="1" x="190.5" y="167.64"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="LOCK_P" class="0">
 <segment>
-<pinref part="DOOR-STRIKE" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="35.56" x2="165.1" y2="35.56" width="0.1524" layer="91"/>
 <label x="165.1" y="35.56" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="DOOR-STRIKE" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="1" pin="+12V"/>
-<wire x1="190.5" y1="162.56" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="165.1" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
 <label x="200.66" y="157.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="LOCK_N" class="0">
 <segment>
+<label x="177.8" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="DOOR-STRIKE" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="33.02" x2="177.8" y2="33.02" width="0.1524" layer="91"/>
-<label x="177.8" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="Q4" gate="G$1" pin="D"/>

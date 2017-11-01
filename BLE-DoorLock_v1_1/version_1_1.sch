@@ -9092,12 +9092,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="U$4" library="Adafruit HUZZAH32 ESP32 Feather" deviceset="MOUNTINGHOLE" device="2.5"/>
 <part name="DOOR-STRIKE" library="1729128" deviceset="1729128" device=""/>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
-<part name="RESET1" library="adafruit" deviceset="PINHD-1X1" device=""/>
-<part name="RESET2" library="adafruit" deviceset="PINHD-1X1" device=""/>
-<part name="RESET3" library="adafruit" deviceset="PINHD-1X1" device=""/>
-<part name="RESET4" library="adafruit" deviceset="PINHD-1X1" device=""/>
-<part name="RESET5" library="adafruit" deviceset="PINHD-1X1" device=""/>
-<part name="RESET6" library="adafruit" deviceset="PINHD-1X1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9167,12 +9161,6 @@ Project: Smart Hotel</text>
 <instance part="U$4" gate="G$1" x="33.02" y="10.16"/>
 <instance part="DOOR-STRIKE" gate="G$1" x="180.34" y="35.56"/>
 <instance part="P+2" gate="1" x="177.8" y="43.18"/>
-<instance part="RESET1" gate="G$1" x="111.76" y="101.6" rot="MR0"/>
-<instance part="RESET2" gate="G$1" x="111.76" y="91.44" rot="MR0"/>
-<instance part="RESET3" gate="G$1" x="111.76" y="81.28" rot="MR0"/>
-<instance part="RESET4" gate="G$1" x="111.76" y="71.12" rot="MR0"/>
-<instance part="RESET5" gate="G$1" x="111.76" y="60.96" rot="MR0"/>
-<instance part="RESET6" gate="G$1" x="111.76" y="50.8" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -9534,42 +9522,6 @@ Project: Smart Hotel</text>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="147.32" x2="182.88" y2="147.32" width="0.1524" layer="91"/>
 <label x="182.88" y="147.32" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="RESET1" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="101.6" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="RESET2" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="RESET3" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="RESET4" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="RESET5" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="RESET6" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
